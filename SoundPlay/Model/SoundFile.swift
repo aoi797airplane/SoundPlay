@@ -31,25 +31,6 @@ class SoundFile{
             }
         }
     }
-            
-        
-//    func initSound(fileName: String, extensionName: String){
-//
-//        //再生する
-//        let soundPath = Bundle.main.path(forResource: fileName, ofType: extensionName)!
-//        let soundURL = URL(fileURLWithPath: soundPath)
-////        let soundURL = Bundle.main.url(forResource: fileName, withExtension: extensionName)
-//
-//        do {
-//
-//            //効果音を鳴らす
-//            player0 = try AVAudioPlayer(contentsOf: soundURL)
-//            player0?.prepareToPlay()
-//        } catch {
-//            print("エラーです。")
-//        }
-//
-//    }
     
     func playSound(SoundNumber: Int) {
         playerList[SoundNumber].play()
